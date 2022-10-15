@@ -1,0 +1,17 @@
+.footer {
+    background-color: #3e2c61;
+    color: #fff;
+    padding: 20px;
+    /* padding-left: 5rem; */
+    text-align: center;
+}
+.fText{
+    margin-top: 5rem;
+}
+.footButton{
+    background-color: #e9e6e5;
+    padding: 10px 12px;
+    border: 1px solid #3e2c61;
+    border-radius: 5px;
+    cursor: pointer;
+}

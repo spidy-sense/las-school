@@ -1,0 +1,22 @@
+.gallery-block{
+    background-color: #e9e6e5;
+    padding: 20px;
+    text-align: center;
+    color: #3e2c61;
+    border-top: 1px solid #3e2c61;
+}
+
+.grid-container-gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    padding: 10px;
+}
+
+.grid-item-gallery {
+    padding: 20px 0px;
+}
+
+.grid-item-gallery img{
+    border: 1px solid;
+}

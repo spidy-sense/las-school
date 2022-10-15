@@ -1,0 +1,12 @@
+.grandmaster-block{
+    padding: 20px;
+    text-align: center;
+    background-color: #e9e6e5;
+    color: #3e2c61;
+}
+
+.grand-image{
+    position: absolute;
+    margin-top: -4rem;
+    margin-left: 5rem;
+}

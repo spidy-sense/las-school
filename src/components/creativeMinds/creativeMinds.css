@@ -1,0 +1,32 @@
+.creative-head{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.creative-content{
+    position: absolute;
+    bottom: 2rem;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.creative-count{
+    background-color: #3e2c61;
+    padding: 30px;
+    border-radius: 50%;
+    font-weight: 600;
+    border: 3px solid;
+    width: fit-content;
+    margin-left: 42%;
+}
+
+.grid-container-minds{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 10px;
+}
