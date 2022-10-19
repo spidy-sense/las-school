@@ -26,7 +26,7 @@ const Gallery = () => {
                 </div>
             </div>
 
-            <button className="headButton" style={{ 'marginTop': '2rem' }}>View More</button>
+            {/* <button className="headButton" style={{ 'marginTop': '2rem' }}>View More</button> */}
         </div>
     )
 }

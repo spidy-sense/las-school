@@ -1,10 +1,10 @@
 import './register.css';
 
 import background from '../../attachments/register-bg.jpg';
-import Navbar from '../../components/navbar/Navbar';
 import { useRef } from 'react';
 
 import Dropdown from 'react-dropdown';
+import NavbarHead from '../../components/navbar/NavbarHead';
 
 const Register = () => {
     const form = useRef();
@@ -19,16 +19,14 @@ const Register = () => {
 
     return (
         <>
-            <Navbar />
+            <NavbarHead />
             <div>
-                <img src={background} style={{ 'width': '100%', 'height': '94.4vh', 'backgroundSize': 'cover', 'filter':'brightness(10%)', 'display': 'block' }} />
-
                 <div className="register-form">
-                    <h2 style={{ 'fontSize': '35px' }}>Send us a message</h2>
+                    <h2 style={{ 'fontSize': '35px', 'marginTop': '0', 'paddingTop': '2rem' }}>Send us a message</h2>
                     <h4 style={{ 'fontSize': '14px' }}>Submit the form for the query of addmission</h4>
 
                     <form ref={form} onSubmit={sendEmail}>
-                        <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(2,1fr)', 'width': '90%' }}>
+                        <div className="grid-container-register" style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(2,1fr)', 'width': '90%', 'gap': '2rem' }}>
                             <div>
                                 <div className="formInput">
                                 <label>Name of Applicant:</label>

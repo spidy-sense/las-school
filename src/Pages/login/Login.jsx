@@ -1,8 +1,8 @@
 import background from '../../attachments/register-bg.jpg';
-import Navbar from '../../components/navbar/Navbar';
 import { useRef } from 'react';
 
 import Dropdown from 'react-dropdown';
+import NavbarHead from '../../components/navbar/NavbarHead';
 
 const Login = () => {
     const form = useRef();
@@ -17,16 +17,13 @@ const Login = () => {
 
     return (
         <>
-            <Navbar />
+            <NavbarHead />
             <div>
-                <img src={background} style={{ 'width': '100%', 'height': '94.4vh', 'backgroundSize': 'cover', 'filter':'brightness(10%)', 'display': 'block' }} />
-
                 <div className="register-form">
-                    <h2 style={{ 'fontSize': '35px' }}>Send us a message</h2>
-                    <h4 style={{ 'fontSize': '14px' }}>Submit the form for the query of addmission</h4>
+                    <h2 style={{ 'fontSize': '35px', 'marginTop': '0', 'paddingTop': '2rem' }}>Contact Us</h2>
 
                     <form ref={form} onSubmit={sendEmail}>
-                        <div>
+                        <div style={{ 'padding': '0 2rem' }}>
                             <div>
                                 <div className="formInput">
                                 <label>Name:</label>

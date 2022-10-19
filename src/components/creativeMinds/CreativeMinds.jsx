@@ -17,21 +17,21 @@ const CreativeMinds = () => {
                         <div className="creative-count">
                             1100
                         </div>
-                        <h4>Students</h4>
+                        <h4 style={{ fontSize: 18 }}>Students</h4>
                     </div>
 
                     <div>
                         <div className="creative-count">
                             35+
                         </div>
-                        <h4>Classrooms</h4>
+                        <h4 style={{ fontSize: 18 }}>Classrooms</h4>
                     </div>
 
                     <div>
                         <div className="creative-count">
                             40+
                         </div>
-                        <h4>Teachers</h4>
+                        <h4 style={{ fontSize: 18 }}>Teachers</h4>
                     </div>
                 </div>
             </div>

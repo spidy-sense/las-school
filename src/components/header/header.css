@@ -1,7 +1,7 @@
 .header-image{
     width: 100%;
-    object-fit: contain;
     display: block;
+    height: 500px;
 }
 
 .header-block-1{

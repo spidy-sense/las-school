@@ -1,19 +1,14 @@
 .register-form{
-    position: absolute;
     color: #fff;
-    top: 10rem;
     width: 100%;
     text-align: center;
-}
-
-form{
-    /* width: 70%; */
-    margin-left: 15%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,1.8)),url('http://localhost:3000/static/media/register-bg.eac8e00fabe33616ed9d.jpg');
+    height: 94.4vh;
 }
 
 .formInput {
-    width: 90%;
-    margin-top: 3rem;
+    /* width: 90%; */
+    margin-bottom: 3rem;
 }
 
 label {
@@ -45,5 +40,11 @@ option{
     color: white;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 5rem;
+    margin-bottom: 5rem;
+    /* margin-top: 3rem; */
+}
+
+form{
+    margin-top: 2rem;
+    padding: 0 2rem;
 }

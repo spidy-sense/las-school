@@ -27,7 +27,7 @@ const Footer = () => {
                     <FaWhatsapp style={{ 'fontSize': '40px' }} />
                 </div>
             </div>
-            <div className="fText">Copyright © 2022 Lamabooking.</div>
+            <div className="fText">Copyright © 2022 LAS School.</div>
         </div>
     );
 };
