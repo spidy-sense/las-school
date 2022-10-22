@@ -5,7 +5,7 @@ import creativeLogo from '../../attachments/bg-2.jpg';
 const CreativeMinds = () => {
     return (
         <div style={{ 'position': 'relative' }}>
-            <img style={{ 'width': '100%', 'height': '400px', 'filter': 'brightness(10%)', 'display': 'block' }} src={creativeLogo} alt="logo" />
+            <img style={{ 'width': '100%', 'height': '320px', 'filter': 'brightness(10%)', 'display': 'block' }} src={creativeLogo} alt="logo" />
 
             <div className="creative-head">
                 <h1 style={{ 'color': '#fff' }}>We Build <span style={{ 'color': '#3e2c61' }}>Creative Minds</span></h1>

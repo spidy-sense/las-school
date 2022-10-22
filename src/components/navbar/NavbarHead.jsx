@@ -11,10 +11,10 @@ import logo from '../../attachments/logo.png'
 const NavbarHead = () => {
 
     return (
-        <Navbar bg="dark" expand="sm" variant="dark" sticky="top" style={{ height: 100 }}>
+        <Navbar bg="dark" expand="sm" variant="dark" sticky="top" style={{ height: 60 }}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} className="me-4" style={{ height: 80, width: 110 }} /> 
+            <img src={logo} className="me-4 school-logo" style={{ height: 60, width: 60 }} /> 
             Little Angels School</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
             <Navbar.Offcanvas
@@ -24,7 +24,7 @@ const NavbarHead = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
-                  Offcanvas
+                  Little Angels School
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

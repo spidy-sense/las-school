@@ -1,20 +1,23 @@
 import background from '../../attachments/register-bg.jpg';
-import { useRef } from 'react';
 
 import Dropdown from 'react-dropdown';
 import NavbarHead from '../../components/navbar/NavbarHead';
 
-const Login = () => {
-    const form = useRef();
+import emailjs from '@emailjs/browser';
 
+const Login = () => {
     const sendEmail = (e) => {
         e.preventDefault();
-    }
-    const handleClick = e => {
-        e.preventDefault();
-        console.log()
-    }
+        emailjs.sendForm('service_1uy17g8', 'template_8d8v8oi', e.target, 'SDuR3WrF1GpqSSKly')
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+            console.log('FAILED...', error);
+        });
 
+        e.target.reset();
+    }
+    
     return (
         <>
             <NavbarHead />
@@ -22,7 +25,7 @@ const Login = () => {
                 <div className="register-form">
                     <h2 style={{ 'fontSize': '35px', 'marginTop': '0', 'paddingTop': '2rem' }}>Contact Us</h2>
 
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form onSubmit={sendEmail}>
                         <div style={{ 'padding': '0 2rem' }}>
                             <div>
                                 <div className="formInput">
@@ -42,7 +45,7 @@ const Login = () => {
 
                             </div>
                         </div>
-                        <button className="submitButton" onClick={handleClick}>Submit</button>
+                        <input type="submit" className="submitButton" value="Submit" />
                     </form>
                 </div>
             </div>

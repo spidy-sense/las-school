@@ -14,7 +14,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const Header = () => {
     return (
         <div  style={{ 'position': 'relative' }}>
-            <div className="header-image" style={{ display: 'block' }}>
+            <div>
                 <Carousel>
                     <Carousel.Item interval={1500}>
                         <img
@@ -48,7 +48,7 @@ const Header = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <div className="header-block-1">
+            <div className="header-block-1 text-center">
                 <h1 style={{ 'color': '#3e2c61' }}>
                     Better Future For Your Kids
                 </h1>
@@ -59,7 +59,7 @@ const Header = () => {
                     <button className="headButton">Registration Open</button>
                 </Link>
 
-                <p style={{ 'color': '#fff', 'padding': '5px 0', 'fontWeight': '700', }} className="head-1">We just don't give our students only lecture but real life experiment, workshops and filed experience throughout the journey!</p>
+                <p style={{ 'color': '#fff', 'padding': '5px 0', 'fontWeight': '700', textShadow: '0 2px 3px rgba(0, 0, 0, 0.3)' }} className="head-1">We just don't give our students only lecture but real life experiment, workshops and filed experience throughout the journey!</p>
                 <p style={{ 'color': '#fff', 'padding': '5px 5px', 'fontWeight': '700' }} className="head-2">Let the child be the director, and the actor in his own play!</p>
             </div>
         </div>
