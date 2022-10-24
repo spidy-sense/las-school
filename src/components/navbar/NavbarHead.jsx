@@ -6,15 +6,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import logo from '../../attachments/logo.png'
-
 const NavbarHead = () => {
 
     return (
         <Navbar bg="dark" expand="sm" variant="dark" sticky="top" style={{ height: 60 }}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} className="me-4 school-logo" style={{ height: 60, width: 60 }} /> 
             Little Angels School</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
             <Navbar.Offcanvas

@@ -1,21 +1,33 @@
 .header-image{
     width: 100%;
     display: block;
-    height: 500px;
-    filter: brightness(70%); 
+    height: 600px;
+    filter: brightness(70%);
+    /* border-bottom-left-radius: 50%;  */
+}
+
+.header-image-carousel{
+    width: 80%;
+    float: right;
+    height: 600px;
+    /* border-bottom-left-radius: 50%; */
+}
+
+.carousel-inner{
+    border-bottom-left-radius: 50px;
 }
 
 .header-block-1{
-    position: absolute;
+    /* position: absolute; */
     top: 5rem;
-    right: 3rem;
+    /* right: 3rem; */
 }
 
 .header-block-2{
-    position: absolute;
-    width: 50%;
+    /* position: absolute; */
+    /* width: 50%; */
     text-align: center;
-    bottom: 3rem;
+    /* bottom: 3rem; */
 }
 .headButton{
     padding: 10px;
@@ -29,4 +41,12 @@
 
 .head-2{
     display: none;
+}
+
+.school-name{
+    position: absolute;
+    font-size: 100px;
+    color: #FF2625;
+    opacity: 0.1;
+    font-weight: 600;
 }

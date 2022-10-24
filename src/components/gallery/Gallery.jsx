@@ -9,7 +9,7 @@ import image4 from '../../attachments/gallery-4.jpg';
 const Gallery = () => {
     return (
         <div className="gallery-block">
-            <h2>Galllery</h2>
+            <h2>Gallery</h2>
 
             <div className="grid-container-gallery">
                 <div className="grid-item-gallery">

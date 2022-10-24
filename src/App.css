@@ -2,13 +2,7 @@
   .header-image{
     height: 300px!important;
   }
-  .header-block-1 {
-    display: none;
-  }
-  .header-block-2 {
-    bottom: 2rem!important;
-    left: 6rem!important;
-  }
+  
   .grid-container-gallery{
     grid-template-columns: repeat(1, 1fr)!important;
   }
@@ -22,16 +16,9 @@
     margin-left: 1em!important;
     padding: 20px!important;
   }
-  .logo{
-    font-size: 1.2rem!important;
-    margin-left: 0.4rem;
-  }
   .head-2{
     display: block!important;
     font-size: 10px!important;
-  }
-  .head-1{
-    display: none!important;
   }
   .grndmaster-speech{
     padding: 2rem 0!important;
@@ -48,34 +35,28 @@
     grid-template-columns: repeat(1, 1fr)!important;
     gap: 0!important;
   }
-  .school-logo{
-    height: 40px!important;
-    width: 40px!important;
+
+  .header-image-carousel{
+    display: none!important;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .header-block-2{
-    bottom: 5rem!important;
-  }
+
   .grid-container-register{
     gap: 1rem!important;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .header-block-2{
-    bottom: 10rem!important;
-  }
+ 
   .grid-container-register{
     gap: 3rem!important;
   }
 }
 
 @media screen and (min-width: 1900px) {
-  .header-block-2{
-    bottom: 14rem!important;
-  }
+  
   .grid-container-register{
     gap: 5rem!important;
   }

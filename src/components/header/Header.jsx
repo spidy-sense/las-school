@@ -11,10 +11,30 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
+import logo from '../../attachments/logo.png';
+
 const Header = () => {
     return (
-        <div  style={{ 'position': 'relative' }}>
-            <div>
+        <div className="d-flex">
+            <div className='float-start align-self-center mb-4'>
+                <div className="header-block-1 text-center">
+                    <img src={logo} className="me-4 school-logo" style={{ height: 200, width: 200 }} /> 
+                    <h1 style={{ 'color': '#3e2c61' }}>
+                        Better Future For Your Kids
+                    </h1>
+                    <p style={{ 'color': '#3e2c61', 'backgroundColor': '#fff', 'padding': '5px 5px', 'fontWeight': '600' }}>Let the child be the director, and the actor in his own play</p>
+                </div>
+                <div className="header-block-2">
+                    <Link to="/register">
+                        <button className="headButton">Registration Open</button>
+                    </Link>
+
+                    <p style={{ 'color': 'rgb(62, 44, 97)', 'fontWeight': '700', width: '75%', marginTop: '1rem', margin: 'auto' }} className="head-1 mt-4">We just don't give our students only lecture but real life experiment, workshops and filed experience throughout the journey!</p>
+
+                </div>
+                <div className="school-name">Little Angel School</div>
+            </div>
+            <div className="header-image-carousel">
                 <Carousel>
                     <Carousel.Item interval={1500}>
                         <img
@@ -47,20 +67,6 @@ const Header = () => {
                         />
                     </Carousel.Item>
                 </Carousel>
-            </div>
-            <div className="header-block-1 text-center">
-                <h1 style={{ 'color': '#3e2c61' }}>
-                    Better Future For Your Kids
-                </h1>
-                <p style={{ 'color': '#3e2c61', 'backgroundColor': '#fff', 'padding': '5px 5px', 'fontWeight': '600' }}>Let the child be the director, and the actor in his own play</p>
-            </div>
-            <div className="header-block-2">
-                <Link to="/register">
-                    <button className="headButton">Registration Open</button>
-                </Link>
-
-                <p style={{ 'color': '#fff', 'padding': '5px 0', 'fontWeight': '700', textShadow: '0 2px 3px rgba(0, 0, 0, 0.3)' }} className="head-1">We just don't give our students only lecture but real life experiment, workshops and filed experience throughout the journey!</p>
-                <p style={{ 'color': '#fff', 'padding': '5px 5px', 'fontWeight': '700' }} className="head-2">Let the child be the director, and the actor in his own play!</p>
             </div>
         </div>
     )
